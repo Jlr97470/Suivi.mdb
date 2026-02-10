@@ -1,0 +1,97 @@
+﻿<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:od="urn:schemas-microsoft-com:officedata">
+  <xsd:element name="dataroot">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="Employés" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+      </xsd:sequence>
+      <xsd:attribute name="generated" type="xsd:dateTime"></xsd:attribute>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="Employés">
+    <xsd:annotation>
+      <xsd:appinfo>
+        <od:index index-name="NomFamille" index-key="NomEmployé " primary="no" unique="no" clustered="no" order="asc"></od:index>
+        <od:index index-name="PrimaryKey" index-key="RéfEmployé " primary="yes" unique="yes" clustered="no" order="asc"></od:index>
+        <od:index index-name="RéfDirecteur" index-key="RéfDirecteur " primary="no" unique="no" clustered="no" order="asc"></od:index>
+        <od:tableProperty name="OrderByOn" type="1" value="0"></od:tableProperty>
+        <od:tableProperty name="Orientation" type="2" value="0"></od:tableProperty>
+      </xsd:appinfo>
+    </xsd:annotation>
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="RéfEmployé" minOccurs="1" od:jetType="autonumber" od:sqlSType="int" od:autoUnique="yes" od:nonNullable="yes" type="xsd:int">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Caption" type="12" value="Réf Employé"></od:fieldProperty>
+              <od:fieldProperty name="ColumnWidth" type="3" value="1283"></od:fieldProperty>
+              <od:fieldProperty name="ColumnOrder" type="3" value="0"></od:fieldProperty>
+              <od:fieldProperty name="ColumnHidden" type="1" value="0"></od:fieldProperty>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="NomEmployé" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="AllowZeroLength" type="1" value="0"></od:fieldProperty>
+              <od:fieldProperty name="Required" type="1" value="0"></od:fieldProperty>
+              <od:fieldProperty name="Caption" type="12" value="Nom Employé"></od:fieldProperty>
+              <od:fieldProperty name="ColumnWidth" type="3" value="1951"></od:fieldProperty>
+              <od:fieldProperty name="ColumnOrder" type="3" value="0"></od:fieldProperty>
+              <od:fieldProperty name="ColumnHidden" type="1" value="0"></od:fieldProperty>
+              <od:fieldProperty name="DisplayControl" type="3" value="109"></od:fieldProperty>
+              <od:fieldProperty name="UnicodeCompression" type="1" value="1"></od:fieldProperty>
+            </xsd:appinfo>
+          </xsd:annotation>
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="50"></xsd:maxLength>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element name="Téléphone" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="AllowZeroLength" type="1" value="0"></od:fieldProperty>
+              <od:fieldProperty name="Required" type="1" value="0"></od:fieldProperty>
+              <od:fieldProperty name="Caption" type="12" value="Téléphone bureau"></od:fieldProperty>
+              <od:fieldProperty name="InputMask" type="10" value="00\ 00\ 00\ 00\ 00;;_"></od:fieldProperty>
+              <od:fieldProperty name="ColumnWidth" type="3" value="1905"></od:fieldProperty>
+              <od:fieldProperty name="ColumnOrder" type="3" value="0"></od:fieldProperty>
+              <od:fieldProperty name="ColumnHidden" type="1" value="0"></od:fieldProperty>
+              <od:fieldProperty name="DisplayControl" type="3" value="109"></od:fieldProperty>
+              <od:fieldProperty name="UnicodeCompression" type="1" value="1"></od:fieldProperty>
+            </xsd:appinfo>
+          </xsd:annotation>
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="30"></xsd:maxLength>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element name="RéfDirecteur" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"></od:fieldProperty>
+              <od:fieldProperty name="Caption" type="12" value="Réf Directeur"></od:fieldProperty>
+              <od:fieldProperty name="ColumnWidth" type="3" value="1951"></od:fieldProperty>
+              <od:fieldProperty name="ColumnOrder" type="3" value="0"></od:fieldProperty>
+              <od:fieldProperty name="ColumnHidden" type="1" value="0"></od:fieldProperty>
+              <od:fieldProperty name="DecimalPlaces" type="2" value="255"></od:fieldProperty>
+              <od:fieldProperty name="DisplayControl" type="3" value="111"></od:fieldProperty>
+              <od:fieldProperty name="RowSourceType" type="10" value="Table/Query"></od:fieldProperty>
+              <od:fieldProperty name="RowSource" type="12" value="SELECT DISTINCTROW Employés.RéfEmployé, Employés.NomEmployé FROM Employés ORDER BY Employés.NomEmployé;"></od:fieldProperty>
+              <od:fieldProperty name="BoundColumn" type="3" value="1"></od:fieldProperty>
+              <od:fieldProperty name="ColumnCount" type="3" value="2"></od:fieldProperty>
+              <od:fieldProperty name="ColumnHeads" type="1" value="0"></od:fieldProperty>
+              <od:fieldProperty name="ColumnWidths" type="10" value="0;2880"></od:fieldProperty>
+              <od:fieldProperty name="ListRows" type="3" value="8"></od:fieldProperty>
+              <od:fieldProperty name="ListWidth" type="10" value="1134twip"></od:fieldProperty>
+              <od:fieldProperty name="LimitToList" type="1" value="1"></od:fieldProperty>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

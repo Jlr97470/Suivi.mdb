@@ -1,0 +1,222 @@
+﻿{
+  "Info": {
+    "Class": "clsVCSIndex",
+    "Description": "Version Control System Index"
+  },
+  "Items": {
+    "MergeBuildDate": null,
+    "FullBuildDate": null,
+    "ExportDate": "2026-02-10T06:11:13.000Z",
+    "FullExportDate": "2026-02-10T06:11:13.000Z",
+    "OptionsHash": "397c939",
+    "LastMergedCommit": "",
+    "Components": {
+      "CommandBars": {
+        "Barre de menus Problèmes.json": {
+          "FileHash": "6508f58",
+          "ExportDate": "2026-02-10T06:11:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "60a04ce"
+        }
+      },
+      "DB Connections": {
+        "db-connection.json": {
+        }
+      },
+      "DB Properties": {
+        "dbs-properties.json": {
+          "FileHash": "e14d590",
+          "ExportDate": "2026-02-10T06:11:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "7293dcb"
+        }
+      },
+      "Doc Properties": {
+        "documents.json": {
+          "FileHash": "dc2c5ca",
+          "ExportDate": "2026-02-10T06:11:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "da5f0a9"
+        }
+      },
+      "Forms": {
+        "DialogueNomEmployé.bas": {
+          "FileHash": "88f85cc",
+          "OtherHash": "38c9b55",
+          "ExportDate": "2026-02-10T06:11:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "6a5ad88"
+        },
+        "ModifierLien.bas": {
+          "FileHash": "354da23",
+          "OtherHash": "8fdbc91",
+          "ExportDate": "2026-02-10T06:11:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "1c5b9ca"
+        },
+        "Réassigner.bas": {
+          "FileHash": "25556d5",
+          "OtherHash": "d39fe2c",
+          "ExportDate": "2026-02-10T06:11:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "6d6872e"
+        },
+        "SousFormulaireCommentaires.bas": {
+          "FileHash": "d3b9285",
+          "OtherHash": "21f740c",
+          "ExportDate": "2026-02-10T06:11:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "4fb408b"
+        },
+        "Suivi.bas": {
+          "FileHash": "8708dd6",
+          "OtherHash": "3af1ef3",
+          "ExportDate": "2026-02-10T06:11:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "19d7d73"
+        }
+      },
+      "Hidden Attributes": {
+        "hidden-attributes.json": {
+        }
+      },
+      "Modules": {
+        "Divers.bas": {
+          "FileHash": "eb2e2cd",
+          "OtherHash": "392464c",
+          "ExportDate": "2026-02-10T06:10:51.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "314a8fe"
+        },
+        "Messages.bas": {
+          "FileHash": "1b11676",
+          "OtherHash": "f4e84b1",
+          "ExportDate": "2026-02-10T06:10:51.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "f2244ac"
+        }
+      },
+      "Nav Pane Groups": {
+        "nav-pane-groups.json": {
+          "FileHash": "20941b0",
+          "ExportDate": "2026-02-10T06:11:13.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "5aeb468"
+        }
+      },
+      "Proj Properties": {
+        "proj-properties.json": {
+          "FileHash": "1adf8e9",
+          "ExportDate": "2026-02-10T06:10:51.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "aaf2f2e"
+        }
+      },
+      "Project": {
+        "project.json": {
+          "FileHash": "9244188",
+          "ExportDate": "2026-02-10T06:10:50.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "38004ac"
+        }
+      },
+      "Queries": {
+        "EmployésAvecProblèmesNonRésolus.bas": {
+          "FileHash": "d137886",
+          "ExportDate": "2026-02-10T06:11:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "a6749db"
+        },
+        "ProblèmesPourEtats.bas": {
+          "FileHash": "c7e7c3e",
+          "ExportDate": "2026-02-10T06:11:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "f118cc1"
+        },
+        "RequêteCommentaires.bas": {
+          "FileHash": "7ced0c3",
+          "ExportDate": "2026-02-10T06:11:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "f7157ca"
+        },
+        "RequêteSuivi.bas": {
+          "FileHash": "5a29aa9",
+          "ExportDate": "2026-02-10T06:11:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "177c6a9"
+        }
+      },
+      "Relations": {
+        "StatusLookupComments.json": {
+          "FileHash": "9944fc1",
+          "ExportDate": "2026-02-10T06:11:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "e79a008"
+        }
+      },
+      "Reports": {
+        "Suivi.bas": {
+          "FileHash": "a6556ea",
+          "OtherHash": "73cdfe2",
+          "ExportDate": "2026-02-10T06:11:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "39a4e5d"
+        }
+      },
+      "Tables": {
+        "Commentaires.xml": {
+          "FileHash": "3283008",
+          "ExportDate": "2026-02-10T06:11:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "f4fa379"
+        },
+        "Employés.xml": {
+          "FileHash": "699595e",
+          "ExportDate": "2026-02-10T06:11:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "0db9bc3"
+        },
+        "RechercheEtat.xml": {
+          "FileHash": "ebbf7e1",
+          "ExportDate": "2026-02-10T06:11:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "f6c9b03"
+        },
+        "RecherchePriorité.xml": {
+          "FileHash": "412fa33",
+          "ExportDate": "2026-02-10T06:11:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "048e41b"
+        },
+        "RechercheRésolution.xml": {
+          "FileHash": "cf26da6",
+          "ExportDate": "2026-02-10T06:11:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "f4a5f1b"
+        },
+        "Suivi.xml": {
+          "FileHash": "1fae0ce",
+          "ExportDate": "2026-02-10T06:11:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "25d4d32"
+        }
+      },
+      "VB Project": {
+        "vbe-project.json": {
+          "FileHash": "be83ba5",
+          "ExportDate": "2026-02-10T06:10:50.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "fd482fb"
+        }
+      },
+      "VBE References": {
+        "vbe-references.json": {
+          "FileHash": "2008e48",
+          "ExportDate": "2026-02-10T06:10:51.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "21027cf"
+        }
+      }
+    }
+  }
+}

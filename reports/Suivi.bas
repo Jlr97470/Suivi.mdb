@@ -1,0 +1,534 @@
+﻿Version =19
+VersionRequired =19
+Begin Report
+    LayoutForPrint = NotDefault
+    DefaultView =0
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridX =24
+    GridY =24
+    Width =10020
+    DatasheetFontHeight =10
+    ItemSuffix =59
+    Left =90
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x4ced3209b1bde140
+    End
+    RecordSource ="ProblèmesPourEtats"
+    Caption ="Suivi des problèmes"
+    DatasheetFontName ="Arial"
+    Begin
+        Begin Label
+            FontItalic = NotDefault
+            BackStyle =0
+            TextAlign =1
+            TextFontFamily =18
+            FontSize =10
+            FontWeight =700
+            ForeColor =8388608
+            FontName ="Times New Roman"
+        End
+        Begin Rectangle
+            BackStyle =0
+            BorderWidth =1
+            BorderColor =8388608
+        End
+        Begin Line
+            BorderColor =8388608
+        End
+        Begin Image
+            OldBorderStyle =0
+            PictureAlignment =2
+        End
+        Begin CheckBox
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            BackStyle =1
+        End
+        Begin TextBox
+            OldBorderStyle =0
+            BackStyle =0
+            FontName ="Arial"
+        End
+        Begin ListBox
+            OldBorderStyle =0
+            FontName ="Arial"
+        End
+        Begin ComboBox
+            OldBorderStyle =0
+            BackStyle =0
+            FontName ="Arial"
+        End
+        Begin Subform
+            OldBorderStyle =0
+        End
+        Begin BreakLevel
+            GroupHeader = NotDefault
+            GroupFooter = NotDefault
+            KeepTogether =2
+            ControlSource ="AssignéA"
+        End
+        Begin BreakLevel
+            ControlSource ="RéfProblème"
+        End
+        Begin FormHeader
+            KeepTogether = NotDefault
+            Height =900
+            Name ="ReportHeader"
+            Begin
+                Begin Label
+                    BackStyle =1
+                    Left =60
+                    Top =120
+                    Width =3480
+                    Height =510
+                    FontSize =20
+                    Name ="Label22"
+                    Caption ="Problèmes en cours"
+                End
+                Begin Line
+                    BorderWidth =3
+                    Top =60
+                    Width =10018
+                    BorderColor =12632256
+                    Name ="Line25"
+                End
+                Begin Line
+                    BorderWidth =3
+                    Top =90
+                    Width =10018
+                    BorderColor =12632256
+                    Name ="Line26"
+                End
+            End
+        End
+        Begin PageHeader
+            Height =120
+            Name ="EntêtePage"
+            Begin
+                Begin Line
+                    BorderWidth =3
+                    Width =10018
+                    BorderColor =12632256
+                    Name ="Line27"
+                End
+                Begin Line
+                    BorderWidth =3
+                    Top =30
+                    Width =10018
+                    BorderColor =12632256
+                    Name ="Line28"
+                End
+            End
+        End
+        Begin BreakHeader
+            KeepTogether = NotDefault
+            Height =905
+            OnPrint ="[Event Procedure]"
+            Name ="EntêteGroupe0"
+            Begin
+                Begin TextBox
+                    FontItalic = NotDefault
+                    DecimalPlaces =0
+                    TextFontFamily =18
+                    Left =2060
+                    Top =120
+                    Width =2801
+                    Height =314
+                    ColumnWidth =1951
+                    FontSize =11
+                    ForeColor =8388608
+                    Name ="AssignéA"
+                    ControlSource ="AssignéA"
+                    FontName ="Times New Roman"
+                    Begin
+                        Begin Label
+                            Left =60
+                            Top =123
+                            Width =1885
+                            Height =301
+                            FontSize =11
+                            Name ="lbAssignéA"
+                            Caption ="Problèmes assignés à :"
+                        End
+                    End
+                End
+                Begin Label
+                    Left =165
+                    Top =590
+                    Width =1511
+                    Height =301
+                    FontSize =11
+                    Name ="lbRéfProblème"
+                    Caption ="Réf. problème"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    Left =1830
+                    Top =604
+                    Width =2001
+                    Height =301
+                    FontSize =11
+                    Name ="lbTitre"
+                    Caption ="Titre"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    Left =4860
+                    Top =604
+                    Width =720
+                    Height =301
+                    FontSize =11
+                    Name ="lbEtat"
+                    Caption ="État"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    Left =6060
+                    Top =604
+                    Width =851
+                    Height =301
+                    FontSize =11
+                    Name ="lbPriorité"
+                    Caption ="Priorité"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    TextAlign =3
+                    Left =7320
+                    Top =600
+                    Width =655
+                    Height =301
+                    FontSize =11
+                    Name ="lbDateSaisie"
+                    Caption ="Date "
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    Left =8400
+                    Top =600
+                    Width =1327
+                    Height =301
+                    FontSize =11
+                    Name ="lbSaisiPar"
+                    Caption ="Saisi par"
+                    Tag ="DetachedLabel"
+                End
+                Begin Line
+                    LineSlant = NotDefault
+                    BorderWidth =2
+                    Top =585
+                    Width =10016
+                    Height =15
+                    Name ="Line29"
+                    Tag ="DetachedLabel"
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            OnFormat ="[Event Procedure]"
+            OnPrint ="[Event Procedure]"
+            Name ="Detail"
+            Begin
+                Begin TextBox
+                    TextAlign =1
+                    Left =165
+                    Top =70
+                    Width =1279
+                    Height =223
+                    ColumnWidth =877
+                    Name ="RéfProblème"
+                    ControlSource ="RéfProblème"
+                End
+                Begin TextBox
+                    TextAlign =1
+                    Left =1830
+                    Top =60
+                    Width =2948
+                    Height =248
+                    ColumnWidth =3338
+                    TabIndex =1
+                    Name ="Titre"
+                    ControlSource ="Titre"
+                End
+                Begin TextBox
+                    TextAlign =1
+                    Left =4920
+                    Top =60
+                    Width =1140
+                    Height =248
+                    TabIndex =2
+                    Name ="Etat"
+                    ControlSource ="Etat"
+                End
+                Begin TextBox
+                    TextAlign =1
+                    Left =6120
+                    Top =60
+                    Width =1140
+                    Height =248
+                    TabIndex =3
+                    Name ="Priorité"
+                    ControlSource ="Priorité"
+                    ConditionalFormat = Begin
+                        0x0100000070000000010000000000000002000000000000000700000001010000 ,
+                        0x00000000ffffff00000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x22004800690067006800220000000000
+                    End
+                End
+                Begin TextBox
+                    TextAlign =1
+                    Left =7380
+                    Top =60
+                    Width =1022
+                    Height =248
+                    ColumnWidth =1361
+                    TabIndex =4
+                    Name ="DateSaisie"
+                    ControlSource ="DateSaisie"
+                End
+                Begin TextBox
+                    TextAlign =1
+                    Left =8460
+                    Top =60
+                    Width =1506
+                    Height =248
+                    ColumnWidth =1951
+                    TabIndex =5
+                    Name ="EnteredBy"
+                    ControlSource ="Saisi par"
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    Left =1800
+                    Top =510
+                    Width =4617
+                    Height =237
+                    ColumnWidth =1571
+                    TabIndex =6
+                    Name ="Description"
+                    ControlSource ="Description"
+                    Begin
+                        Begin Label
+                            TextAlign =0
+                            Left =600
+                            Top =480
+                            Width =1100
+                            Height =302
+                            Name ="Label35"
+                            Caption ="Description :"
+                        End
+                    End
+                End
+                Begin TextBox
+                    TextAlign =1
+                    Left =8460
+                    Top =510
+                    Width =1506
+                    TabIndex =7
+                    Name ="DateRésolution"
+                    ControlSource ="DateRésolution"
+                    Begin
+                        Begin Label
+                            TextAlign =0
+                            Left =6779
+                            Top =472
+                            Width =1725
+                            Height =285
+                            Name ="lbDateRésolution"
+                            Caption ="Date de résolution :"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Left =8460
+                    Top =810
+                    Width =1506
+                    TabIndex =8
+                    Name ="Résolution"
+                    ControlSource ="Résolution"
+                    Begin
+                        Begin Label
+                            TextAlign =0
+                            Left =6779
+                            Top =780
+                            Width =1095
+                            Height =285
+                            Name ="lbRésolution"
+                            Caption ="Résolution :"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Left =8460
+                    Top =1110
+                    Width =1506
+                    ColumnWidth =1951
+                    TabIndex =9
+                    Name ="RésoluPar"
+                    ControlSource ="Résolu par"
+                    Begin
+                        Begin Label
+                            TextAlign =0
+                            Left =6779
+                            Top =1080
+                            Width =1095
+                            Height =285
+                            Name ="lbRésoluPar"
+                            Caption ="Résolu par :"
+                        End
+                    End
+                End
+                Begin Line
+                    LineSlant = NotDefault
+                    BorderWidth =2
+                    Top =-1
+                    Width =10016
+                    Height =15
+                    Name ="Line32"
+                    Tag ="DetachedLabel"
+                End
+            End
+        End
+        Begin BreakFooter
+            KeepTogether = NotDefault
+            Height =1322
+            Name ="PieddeGroupe1"
+            Begin
+                Begin Line
+                    BorderWidth =3
+                    Top =1133
+                    Width =10018
+                    BorderColor =12632256
+                    Name ="Line36"
+                End
+                Begin TextBox
+                    TextAlign =1
+                    Left =2149
+                    Top =141
+                    Width =1755
+                    Height =225
+                    Name ="TotalProblèmes"
+                    ControlSource ="=Count([RéfProblème])"
+                    Begin
+                        Begin Label
+                            TextAlign =0
+                            Left =60
+                            Top =120
+                            Width =2025
+                            Height =285
+                            Name ="Label48"
+                            Caption ="Nombre de problèmes :"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Left =7041
+                    Top =141
+                    Width =2506
+                    Height =256
+                    TabIndex =1
+                    Name ="ProblèmesEnCours"
+                    Begin
+                        Begin Label
+                            TextAlign =0
+                            Left =5095
+                            Top =118
+                            Width =1815
+                            Height =270
+                            Name ="Étiquette56"
+                            Caption ="Problèmes en cours :"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Left =7016
+                    Top =566
+                    Width =2514
+                    Height =355
+                    TabIndex =2
+                    Name ="PrioritésHautes"
+                    Begin
+                        Begin Label
+                            TextAlign =0
+                            Left =5231
+                            Top =566
+                            Width =1695
+                            Height =270
+                            Name ="Étiquette58"
+                            Caption ="Priorités hautes :"
+                        End
+                    End
+                End
+            End
+        End
+        Begin PageFooter
+            Height =528
+            Name ="PieddePage"
+            Begin
+                Begin TextBox
+                    FontItalic = NotDefault
+                    TextAlign =1
+                    TextFontFamily =18
+                    Left =60
+                    Top =240
+                    Width =5040
+                    Height =288
+                    FontSize =9
+                    FontWeight =700
+                    ForeColor =8388608
+                    Name ="Text23"
+                    ControlSource ="=Now()"
+                    Format ="Long Date"
+                    FontName ="Times New Roman"
+                End
+                Begin TextBox
+                    FontItalic = NotDefault
+                    TextAlign =3
+                    TextFontFamily =18
+                    Left =4980
+                    Top =240
+                    Width =5040
+                    Height =288
+                    FontSize =9
+                    FontWeight =700
+                    TabIndex =1
+                    ForeColor =8388608
+                    Name ="Text24"
+                    ControlSource ="=\"Page \" & [Page] & \" sur \" & [Pages]"
+                    FontName ="Times New Roman"
+                End
+                Begin Line
+                    BorderWidth =3
+                    Width =10018
+                    BorderColor =12632256
+                    Name ="Line33"
+                End
+                Begin Line
+                    BorderWidth =3
+                    Top =30
+                    Width =10018
+                    BorderColor =12632256
+                    Name ="Line34"
+                End
+            End
+        End
+        Begin FormFooter
+            KeepTogether = NotDefault
+            Height =0
+            Name ="PiedEtat"
+        End
+    End
+End
+CodeBehindForm
+' See "Suivi.cls"

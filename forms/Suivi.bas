@@ -1,0 +1,480 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    AutoCenter = NotDefault
+    DefaultView =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridX =24
+    GridY =24
+    Width =8078
+    DatasheetFontHeight =9
+    ItemSuffix =24
+    Left =3390
+    Top =1380
+    Right =11280
+    Bottom =1710
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x320c9453b0bde140
+    End
+    RecordSource ="RequêteSuivi"
+    Caption ="Suivi"
+    BeforeInsert ="[Event Procedure]"
+    MenuBar ="Barre de menus Problèmes"
+    DatasheetFontName ="Arial"
+    Begin
+        Begin Label
+            BackStyle =0
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin TextBox
+            SpecialEffect =2
+            OldBorderStyle =0
+        End
+        Begin ComboBox
+            SpecialEffect =2
+        End
+        Begin Subform
+            SpecialEffect =2
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =6165
+            BackColor =-2147483633
+            Name ="Detail"
+            Begin
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    Left =1440
+                    Top =120
+                    Width =603
+                    ColumnWidth =864
+                    ColumnOrder =0
+                    BackColor =12632256
+                    Name ="RéfProblème"
+                    ControlSource ="RéfProblème"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =120
+                            Width =1080
+                            Height =240
+                            Name ="Label1"
+                            Caption ="Réf. Problème"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =1440
+                    Top =480
+                    Width =6127
+                    ColumnWidth =3312
+                    ColumnOrder =1
+                    TabIndex =1
+                    Name ="Titre"
+                    ControlSource ="Titre"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =480
+                            Width =406
+                            Height =249
+                            Name ="Label3"
+                            Caption ="Titre"
+                        End
+                    End
+                End
+                Begin TextBox
+                    ColumnHidden = NotDefault
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    Left =1440
+                    Top =840
+                    Width =6128
+                    Height =862
+                    ColumnWidth =1649
+                    ColumnOrder =2
+                    TabIndex =2
+                    Name ="Description"
+                    ControlSource ="Description"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =840
+                            Width =956
+                            Height =249
+                            Name ="Label5"
+                            Caption ="Description"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    ColumnCount =2
+                    ListWidth =1080
+                    Left =1440
+                    Top =2520
+                    Width =1441
+                    ColumnWidth =1060
+                    ColumnOrder =5
+                    TabIndex =5
+                    Name ="Priorité"
+                    ControlSource ="Priorité"
+                    RowSourceType ="Table/Query"
+                    RowSource ="RecherchePriorité"
+                    ColumnWidths ="0;1080"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =2520
+                            Width =602
+                            Height =249
+                            Name ="Label7"
+                            Caption ="Priorité"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    Left =6658
+                    Top =120
+                    Width =918
+                    ColumnWidth =982
+                    ColumnOrder =10
+                    TabIndex =10
+                    BackColor =12632256
+                    Name ="DateSaisie"
+                    ControlSource ="DateSaisie"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =6120
+                            Top =120
+                            Width =445
+                            Height =249
+                            Name ="Label9"
+                            Caption ="Date"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    ColumnCount =2
+                    ListWidth =2880
+                    Left =1440
+                    Top =2160
+                    Width =1808
+                    Height =262
+                    ColumnWidth =1689
+                    ColumnOrder =4
+                    TabIndex =4
+                    Name ="AssignéA"
+                    ControlSource ="AssignéA"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT DISTINCTROW Employés.RéfEmployé, Employés.NomEmployé FROM Employés ORDER "
+                        "BY Employés.NomEmployé;"
+                    ColumnWidths ="0;2880"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =2160
+                            Width =1073
+                            Height =249
+                            Name ="Label13"
+                            Caption ="Assigné à"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    ColumnHidden = NotDefault
+                    OverlapFlags =85
+                    Left =5702
+                    Top =1800
+                    Width =1074
+                    ColumnOrder =6
+                    TabIndex =6
+                    BackColor =12632256
+                    Name ="DateRésolution"
+                    ControlSource ="DateRésolution"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =4275
+                            Top =1818
+                            Width =1395
+                            Height =240
+                            Name ="Label15"
+                            Caption ="Date de résolution"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    ColumnHidden = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    ColumnCount =2
+                    Left =5702
+                    Top =2520
+                    Width =1847
+                    ColumnOrder =7
+                    TabIndex =7
+                    Name ="Résolution"
+                    ControlSource ="Résolution"
+                    RowSourceType ="Table/Query"
+                    RowSource ="RechercheRésolution"
+                    ColumnWidths ="0"
+                    BeforeUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =4275
+                            Top =2520
+                            Width =903
+                            Height =249
+                            Name ="Label17"
+                            Caption ="Résolution"
+                        End
+                    End
+                End
+                Begin Subform
+                    OverlapFlags =87
+                    Left =300
+                    Top =3120
+                    Width =7268
+                    Height =1615
+                    TabIndex =9
+                    Name ="Commentaires"
+                    SourceObject ="Form.SousFormulaireCommentaires"
+                    LinkChildFields ="RéfProblème"
+                    LinkMasterFields ="RéfProblème"
+                    OnEnter ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =300
+                            Top =2880
+                            Width =1065
+                            Height =240
+                            Name ="Label20"
+                            Caption ="Commentaires"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OldBorderStyle =1
+                    OverlapFlags =85
+                    Left =3660
+                    Top =120
+                    Width =1860
+                    Height =262
+                    ColumnWidth =1623
+                    ColumnOrder =9
+                    TabIndex =11
+                    BackColor =12632256
+                    Name ="SaisiPar"
+                    ControlSource ="SaisiPar"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =2640
+                            Top =120
+                            Width =929
+                            Height =249
+                            Name ="Label11"
+                            Caption ="Saisi par"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    ColumnCount =2
+                    Left =1440
+                    Top =1800
+                    Width =1375
+                    ColumnWidth =1191
+                    ColumnOrder =3
+                    TabIndex =3
+                    Name ="Etat"
+                    ControlSource ="Etat"
+                    RowSourceType ="Table/Query"
+                    RowSource ="RechercheEtat"
+                    ColumnWidths ="0"
+                    BeforeUpdate ="[Event Procedure]"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =1800
+                            Width =589
+                            Height =249
+                            Name ="Label21"
+                            Caption ="État"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    ColumnHidden = NotDefault
+                    OldBorderStyle =1
+                    OverlapFlags =85
+                    Left =5702
+                    Top =2160
+                    Width =1847
+                    ColumnWidth =1283
+                    ColumnOrder =8
+                    TabIndex =8
+                    BackColor =12632256
+                    Name ="RésoluPar"
+                    ControlSource ="RésoluPar"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =4275
+                            Top =2160
+                            Width =1087
+                            Height =249
+                            Name ="Label19"
+                            Caption ="Résolu par"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =3446
+                    Top =2149
+                    Width =336
+                    Height =321
+                    FontWeight =700
+                    TabIndex =12
+                    Name ="ContactOutlook"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000016000000150000000100080000000000f8010000c40e0000c40e0000 ,
+                        0x0001000000000000007b7b0029949400bdbdbd0094cece00d6e7e700ffffff00 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000002020202020202020202020202020202020202020202bfbf ,
+                        0x02020202020202020202020202020202020202020202bfbf0202020000000000 ,
+                        0x0000000000000000000000020202787f02020200000000000000000000000000 ,
+                        0x000000020202787f02020200000505050300000000030505050000020202f8ff ,
+                        0x0202020000050501000000000000010505000002020290900202020000050100 ,
+                        0x0004050504000001050000020202787f02020200000300000505050505050000 ,
+                        0x030000020202787f02020200000000040500000000000400000000020202e0e0 ,
+                        0x02020200000000050500000000000500000000020202f8ff0202020000000005 ,
+                        0x0500000505050500000000020202f8ff02020200000000040500000505050400 ,
+                        0x000000020202e0e002020200000300000500000505050000030000020202787f ,
+                        0x02020200000501000004050504000001050000020202787f0202020000050501 ,
+                        0x0000000000000105050000020202909002020200000505050300000000030505 ,
+                        0x050000020202f8ff02020200000000000000000000000000000000020202787f ,
+                        0x02020200000000000000000000000000000000020202787f0202020202020202 ,
+                        0x0202020202020202020202020202bfbf02020202020202020202020202020202 ,
+                        0x020202020202bfbf02020202020202020202020202020202020202020202bfbf
+                    End
+                    ObjectPalette = Begin
+                        0x000300017b7b000094942900bdbdbd00cece9400e7e7d600ffffff0000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ControlTipText ="Ouvre un Contact Outlook"
+                    Picture ="C:\\Mes Documents\\TRADUCTIQUES\\Access 2000\\CD\\icône.bmp"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =590
+                    Top =5125
+                    Width =1630
+                    Height =237
+                    Name ="Étiquette23"
+                    Caption ="Besoin d'aide ?"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "Suivi.cls"

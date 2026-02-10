@@ -1,0 +1,10 @@
+﻿{
+  "Info": {
+    "Class": "clsDbProjProperty",
+    "Description": "Project Properties (Access)"
+  },
+  "Items": {
+    "VCS Build Path": "D:\\MES_SOURCES\\ACCESS\\EXEMPLES\\ACCESS 2000\\SUIVI",
+    "VCS Source Path": "D:\\MES_SOURCES\\GITHUB\\%dbname%"
+  }
+}

@@ -1,0 +1,4 @@
+﻿CREATE TABLE [RechercheEtat] (
+  [RéfEtat] AUTOINCREMENT CONSTRAINT [PrimaryKey] PRIMARY KEY UNIQUE NOT NULL,
+  [Etat] VARCHAR (50)
+)

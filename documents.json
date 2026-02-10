@@ -1,0 +1,15 @@
+﻿{
+  "Info": {
+    "Class": "clsDbDocument",
+    "Description": "Database Documents Properties (DAO)"
+  },
+  "Items": {
+    "Databases": {
+      "SummaryInfo": {
+        "Company": "Microsoft Press",
+        "Subject": "Fichiers exemples Access VB Chapitre 15",
+        "Title": "Ch15 Suivi"
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+﻿{
+  "Info": {
+    "Class": "clsDbReport",
+    "Description": "Suivi Print Settings"
+  },
+  "Items": {
+    "Printer": {
+      "Orientation": "Portrait",
+      "PaperSize": "A4"
+    },
+    "Margins": {
+      "LeftMargin": 0.75,
+      "TopMargin": 1,
+      "RightMargin": 0.75,
+      "BotMargin": 1,
+      "DataOnly": false,
+      "Width": 6.9583,
+      "Height": 1,
+      "DefaultSize": true,
+      "Columns": 1,
+      "ColumnSpacing": 0.25,
+      "RowSpacing": 0,
+      "ItemLayout": "Horizontal Columns",
+      "FastPrint": 1,
+      "Datasheet": 1
+    }
+  }
+}
