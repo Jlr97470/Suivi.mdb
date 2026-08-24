@@ -6,9 +6,18 @@
   "Items": {
     "Databases": {
       "SummaryInfo": {
-        "Company": "Microsoft Press",
-        "Subject": "Fichiers exemples Access VB Chapitre 15",
-        "Title": "Ch15 Suivi"
+        "Company": {
+          "Type": 10,
+          "Value": "Microsoft Press"
+        },
+        "Subject": {
+          "Type": 10,
+          "Value": "Fichiers exemples Access VB Chapitre 15"
+        },
+        "Title": {
+          "Type": 10,
+          "Value": "Ch15 Suivi"
+        }
       }
     }
   }

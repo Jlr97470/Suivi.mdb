@@ -1,5 +1,5 @@
-﻿SELECT
-  DISTINCTROW Suivi.RéfProblème,
+﻿SELECT DISTINCTROW
+  Suivi.RéfProblème,
   Suivi.Titre,
   Suivi.Description,
   Suivi.Etat,

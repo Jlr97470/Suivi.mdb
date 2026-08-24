@@ -1,5 +1,5 @@
-﻿SELECT
-  DISTINCTROW Commentaires.RéfCommentaire,
+﻿SELECT DISTINCTROW
+  Commentaires.RéfCommentaire,
   Commentaires.RéfProblème,
   Commentaires.RéfEmployé,
   Employés.NomEmployé,

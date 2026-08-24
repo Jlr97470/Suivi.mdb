@@ -1,0 +1,48 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "EmployésAvecProblèmesNonRésolus"
+  },
+  "Items": {
+    "QueryType": 0,
+    "OptionFlag": 8,
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 40,
+        "top": 22,
+        "right": 778,
+        "bottom": 348
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 731,
+        "bottom": 165
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Employés",
+          "Alias": "",
+          "Left": 17,
+          "Top": 8,
+          "Right": 121,
+          "Bottom": 115,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Suivi",
+          "Alias": "",
+          "Left": 158,
+          "Top": 6,
+          "Right": 254,
+          "Bottom": 140,
+          "ScrollTop": 4
+        }
+      ]
+    }
+  }
+}

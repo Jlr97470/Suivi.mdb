@@ -1,0 +1,57 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "RequêteCommentaires"
+  },
+  "Items": {
+    "QueryType": 0,
+    "OptionFlag": 8,
+    "DesignLayout": {
+      "State": 2,
+      "Window": {
+        "left": -4,
+        "top": -23,
+        "right": 800,
+        "bottom": 485
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 797,
+        "bottom": 165
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Commentaires",
+          "Alias": "",
+          "Left": -1,
+          "Top": 2,
+          "Right": 95,
+          "Bottom": 137,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "RechercheEtat",
+          "Alias": "",
+          "Left": 129,
+          "Top": 2,
+          "Right": 225,
+          "Bottom": 136,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Employés",
+          "Alias": "",
+          "Left": 254,
+          "Top": 4,
+          "Right": 350,
+          "Bottom": 141,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

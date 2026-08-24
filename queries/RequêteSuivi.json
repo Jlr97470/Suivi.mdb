@@ -1,0 +1,57 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "RequêteSuivi"
+  },
+  "Items": {
+    "QueryType": 0,
+    "OptionFlag": 8,
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 40,
+        "top": 22,
+        "right": 778,
+        "bottom": 348
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 731,
+        "bottom": 165
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Employés",
+          "Alias": "",
+          "Left": 157,
+          "Top": 6,
+          "Right": 253,
+          "Bottom": 113,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Employés_1",
+          "Alias": "",
+          "Left": 271,
+          "Top": 4,
+          "Right": 367,
+          "Bottom": 111,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Suivi",
+          "Alias": "",
+          "Left": 27,
+          "Top": 4,
+          "Right": 123,
+          "Bottom": 111,
+          "ScrollTop": 7
+        }
+      ]
+    }
+  }
+}

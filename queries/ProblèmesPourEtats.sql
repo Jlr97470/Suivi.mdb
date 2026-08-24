@@ -1,5 +1,5 @@
-﻿SELECT
-  DISTINCTROW Suivi.RéfProblème,
+﻿SELECT DISTINCTROW
+  Suivi.RéfProblème,
   Suivi.Titre,
   Suivi.Description,
   RechercheEtat.Etat,
@@ -31,7 +31,7 @@ FROM
 WHERE
   (
     (
-      (Suivi.Etat)< 3
+      (Suivi.Etat) < 3
     )
   )
 ORDER BY
