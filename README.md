@@ -1,2 +1,2 @@
-Exemple Base Suivi.
+Exemple application Suivi.
 Access 2003.
