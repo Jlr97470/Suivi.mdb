@@ -13,9 +13,9 @@
     "Type": 1,
     "Controls": [
       {
-        "FaceIdName": "File",
+        "ControlIdName": "File",
         "BeginGroup": false,
-        "BuiltIn": false,
+        "BuiltIn": true,
         "Caption": "&Fichier",
         "DescriptionText": "",
         "Enabled": true,
@@ -28,6 +28,7 @@
         "TooltipText": "",
         "Type": 10,
         "Visible": true,
+        "Id": 30002,
         "Controls": [
           {
             "ControlIdName": "New",
@@ -46,9 +47,9 @@
             "Id": 2937
           },
           {
-            "FaceIdName": "Get External Data",
+            "ControlIdName": "Get External Data",
             "BeginGroup": false,
-            "BuiltIn": false,
+            "BuiltIn": true,
             "Caption": "&Données externes",
             "DescriptionText": "",
             "Enabled": true,
@@ -61,24 +62,7 @@
             "TooltipText": "",
             "Type": 10,
             "Visible": true,
-            "Controls": [
-              {
-                "ControlIdName": "Import",
-                "BeginGroup": false,
-                "BuiltIn": true,
-                "Type": 1,
-                "Visible": true,
-                "Id": 524
-              },
-              {
-                "ControlIdName": "Link Tables",
-                "BeginGroup": false,
-                "BuiltIn": true,
-                "Type": 1,
-                "Visible": true,
-                "Id": 1795
-              }
-            ]
+            "Id": 30101
           },
           {
             "ControlIdName": "Close",
@@ -158,7 +142,7 @@
             "BuiltIn": false,
             "Caption": "Ex&porter...",
             "DescriptionText": "",
-            "Enabled": false,
+            "Enabled": true,
             "HelpContextId": 0,
             "HelpFile": "",
             "OLEMenuGroup": -1,
@@ -356,12 +340,12 @@
             "Id": 3840
           },
           {
-            "FaceIdName": "Send To",
+            "ControlIdName": "Send To",
             "BeginGroup": true,
-            "BuiltIn": false,
+            "BuiltIn": true,
             "Caption": "Envo&yer vers",
             "DescriptionText": "",
-            "Enabled": false,
+            "Enabled": true,
             "HelpContextId": 0,
             "HelpFile": "",
             "OLEMenuGroup": -1,
@@ -371,24 +355,7 @@
             "TooltipText": "",
             "Type": 10,
             "Visible": true,
-            "Controls": [
-              {
-                "ControlIdName": "Mail Recipient",
-                "BeginGroup": false,
-                "BuiltIn": true,
-                "Type": 1,
-                "Visible": true,
-                "Id": 3738
-              },
-              {
-                "ControlIdName": "Mail Recipient (as Attachment)",
-                "BeginGroup": false,
-                "BuiltIn": true,
-                "Type": 1,
-                "Visible": true,
-                "Id": 2188
-              }
-            ]
+            "Id": 30095
           },
           {
             "ControlIdName": "Database Properties",
@@ -489,9 +456,9 @@
         ]
       },
       {
-        "FaceIdName": "Edit",
+        "ControlIdName": "Edit",
         "BeginGroup": false,
-        "BuiltIn": false,
+        "BuiltIn": true,
         "Caption": "&Edition",
         "DescriptionText": "",
         "Enabled": true,
@@ -504,6 +471,7 @@
         "TooltipText": "",
         "Type": 10,
         "Visible": true,
+        "Id": 30003,
         "Controls": [
           {
             "ControlIdName": "Undo",
@@ -838,7 +806,7 @@
             "BuiltInFace": true,
             "Caption": "Su&pprimer",
             "DescriptionText": "",
-            "Enabled": false,
+            "Enabled": true,
             "FaceId": 15169,
             "HelpContextId": 0,
             "HelpFile": "",
@@ -886,9 +854,9 @@
             "Id": 313
           },
           {
-            "FaceIdName": "Go To",
+            "ControlIdName": "Go To",
             "BeginGroup": false,
-            "BuiltIn": false,
+            "BuiltIn": true,
             "Caption": "Attein&dre",
             "DescriptionText": "",
             "Enabled": false,
@@ -901,6 +869,7 @@
             "TooltipText": "",
             "Type": 10,
             "Visible": false,
+            "Id": 30039,
             "Controls": [
               {
                 "ControlIdName": "First",
@@ -953,9 +922,9 @@
             "Id": 2942
           },
           {
-            "FaceIdName": "Object",
+            "ControlIdName": "Object",
             "BeginGroup": false,
-            "BuiltIn": false,
+            "BuiltIn": true,
             "Caption": "O&bjet",
             "DescriptionText": "",
             "Enabled": false,
@@ -968,6 +937,7 @@
             "TooltipText": "Actions de l'objet",
             "Type": 10,
             "Visible": false,
+            "Id": 30019,
             "Controls": [
               {
                 "FaceIdName": "<verb>",
@@ -1420,9 +1390,9 @@
             ]
           },
           {
-            "FaceIdName": "Bookmarks",
+            "ControlIdName": "Bookmarks",
             "BeginGroup": true,
-            "BuiltIn": false,
+            "BuiltIn": true,
             "Caption": "&Signets",
             "DescriptionText": "",
             "Enabled": false,
@@ -1435,6 +1405,7 @@
             "TooltipText": "",
             "Type": 10,
             "Visible": false,
+            "Id": 30234,
             "Controls": [
               {
                 "ControlIdName": "Bookmark",
@@ -1473,9 +1444,9 @@
         ]
       },
       {
-        "FaceIdName": "View",
+        "ControlIdName": "View",
         "BeginGroup": false,
-        "BuiltIn": false,
+        "BuiltIn": true,
         "Caption": "&Affichage",
         "DescriptionText": "",
         "Enabled": true,
@@ -1488,11 +1459,12 @@
         "TooltipText": "",
         "Type": 10,
         "Visible": true,
+        "Id": 30004,
         "Controls": [
           {
-            "FaceIdName": "Database Objects",
+            "ControlIdName": "Database Objects",
             "BeginGroup": false,
-            "BuiltIn": false,
+            "BuiltIn": true,
             "Caption": "&Objets de la base",
             "DescriptionText": "",
             "Enabled": true,
@@ -1505,6 +1477,7 @@
             "TooltipText": "",
             "Type": 10,
             "Visible": true,
+            "Id": 30107,
             "Controls": [
               {
                 "ControlIdName": "Tables",
@@ -1902,9 +1875,9 @@
             "Id": 109
           },
           {
-            "FaceIdName": "Table",
+            "ControlIdName": "Table",
             "BeginGroup": true,
-            "BuiltIn": false,
+            "BuiltIn": true,
             "Caption": "Tab&le",
             "DescriptionText": "",
             "Enabled": true,
@@ -1917,6 +1890,7 @@
             "TooltipText": "",
             "Type": 10,
             "Visible": false,
+            "Id": 30439,
             "Controls": [
               {
                 "ControlIdName": "Column Properties",
@@ -1977,9 +1951,9 @@
             ]
           },
           {
-            "FaceIdName": "Show Panes",
+            "ControlIdName": "Show Panes",
             "BeginGroup": false,
-            "BuiltIn": false,
+            "BuiltIn": true,
             "Caption": "Affic&her les volets",
             "DescriptionText": "",
             "Enabled": false,
@@ -1992,6 +1966,7 @@
             "TooltipText": "",
             "Type": 10,
             "Visible": false,
+            "Id": 30440,
             "Controls": [
               {
                 "ControlIdName": "Diagram",
@@ -2256,9 +2231,9 @@
             "Id": 939
           },
           {
-            "FaceIdName": "Toolbars",
+            "ControlIdName": "Toolbars",
             "BeginGroup": true,
-            "BuiltIn": false,
+            "BuiltIn": true,
             "Caption": "&Barres d'outils",
             "DescriptionText": "",
             "Enabled": true,
@@ -2271,61 +2246,12 @@
             "TooltipText": "",
             "Type": 10,
             "Visible": true,
-            "Controls": [
-              {
-                "ControlIdName": "Data Selector",
-                "BeginGroup": false,
-                "BuiltIn": true,
-                "Type": 1,
-                "Visible": true,
-                "Id": 761
-              },
-              {
-                "ControlIdName": "Data Selector",
-                "BeginGroup": false,
-                "BuiltIn": true,
-                "Type": 1,
-                "Visible": true,
-                "Id": 761
-              },
-              {
-                "ControlIdName": "Data Selector",
-                "BeginGroup": false,
-                "BuiltIn": true,
-                "Type": 1,
-                "Visible": true,
-                "Id": 761
-              },
-              {
-                "ControlIdName": "Data Selector",
-                "BeginGroup": false,
-                "BuiltIn": true,
-                "Type": 1,
-                "Visible": true,
-                "Id": 761
-              },
-              {
-                "ControlIdName": "Data Selector",
-                "BeginGroup": false,
-                "BuiltIn": true,
-                "Type": 1,
-                "Visible": true,
-                "Id": 761
-              },
-              {
-                "ControlIdName": "Data Selector",
-                "BeginGroup": false,
-                "BuiltIn": true,
-                "Type": 1,
-                "Visible": true,
-                "Id": 761
-              }
-            ]
+            "Id": 30045
           },
           {
-            "FaceIdName": "Zoom",
+            "ControlIdName": "Zoom",
             "BeginGroup": true,
-            "BuiltIn": false,
+            "BuiltIn": true,
             "Caption": "&Zoom",
             "DescriptionText": "",
             "Enabled": false,
@@ -2338,6 +2264,7 @@
             "TooltipText": "",
             "Type": 10,
             "Visible": false,
+            "Id": 30108,
             "Controls": [
               {
                 "ControlIdName": "Maximum 1000%",
@@ -2446,9 +2373,9 @@
             ]
           },
           {
-            "FaceIdName": "Pages",
+            "ControlIdName": "Pages",
             "BeginGroup": false,
-            "BuiltIn": false,
+            "BuiltIn": true,
             "Caption": "&Pages",
             "DescriptionText": "",
             "Enabled": false,
@@ -2460,7 +2387,8 @@
             "Tag": "",
             "TooltipText": "",
             "Type": 10,
-            "Visible": false
+            "Visible": false,
+            "Id": 30109
           },
           {
             "ControlIdName": "Refresh",
@@ -2473,9 +2401,9 @@
         ]
       },
       {
-        "FaceIdName": "Insert",
+        "ControlIdName": "Insert",
         "BeginGroup": false,
-        "BuiltIn": false,
+        "BuiltIn": true,
         "Caption": "&Insérer",
         "DescriptionText": "",
         "Enabled": true,
@@ -2488,6 +2416,7 @@
         "TooltipText": "",
         "Type": 10,
         "Visible": true,
+        "Id": 30005,
         "Controls": [
           {
             "ControlIdName": "Table Design",
@@ -2748,9 +2677,9 @@
         ]
       },
       {
-        "FaceIdName": "Records",
+        "ControlIdName": "Records",
         "BeginGroup": false,
-        "BuiltIn": false,
+        "BuiltIn": true,
         "Caption": "Enregi&strements",
         "DescriptionText": "",
         "Enabled": true,
@@ -2763,11 +2692,12 @@
         "TooltipText": "",
         "Type": 10,
         "Visible": true,
+        "Id": 30014,
         "Controls": [
           {
-            "FaceIdName": "Filter",
+            "ControlIdName": "Filter",
             "BeginGroup": false,
-            "BuiltIn": false,
+            "BuiltIn": true,
             "Caption": "&Filtrer",
             "DescriptionText": "",
             "Enabled": false,
@@ -2780,6 +2710,7 @@
             "TooltipText": "",
             "Type": 10,
             "Visible": true,
+            "Id": 30031,
             "Controls": [
               {
                 "ControlIdName": "Filter By Form",
@@ -2824,9 +2755,9 @@
             ]
           },
           {
-            "FaceIdName": "Sort",
+            "ControlIdName": "Sort",
             "BeginGroup": false,
-            "BuiltIn": false,
+            "BuiltIn": true,
             "Caption": "&Trier",
             "DescriptionText": "",
             "Enabled": false,
@@ -2839,6 +2770,7 @@
             "TooltipText": "",
             "Type": 10,
             "Visible": true,
+            "Id": 30103,
             "Controls": [
               {
                 "ControlIdName": "Sort Ascending",
@@ -3094,9 +3026,9 @@
         ]
       },
       {
-        "FaceIdName": "Window",
+        "ControlIdName": "Window",
         "BeginGroup": false,
-        "BuiltIn": false,
+        "BuiltIn": true,
         "Caption": "Fe&nêtre",
         "DescriptionText": "",
         "Enabled": true,
@@ -3109,6 +3041,7 @@
         "TooltipText": "",
         "Type": 10,
         "Visible": true,
+        "Id": 30009,
         "Controls": [
           {
             "ControlIdName": "Split",
@@ -3257,9 +3190,9 @@
         ]
       },
       {
-        "FaceIdName": "Help",
+        "ControlIdName": "Help",
         "BeginGroup": false,
-        "BuiltIn": false,
+        "BuiltIn": true,
         "Caption": "&?",
         "DescriptionText": "",
         "Enabled": true,
@@ -3272,204 +3205,7 @@
         "TooltipText": "",
         "Type": 10,
         "Visible": true,
-        "Controls": [
-          {
-            "ControlIdName": "Help",
-            "BeginGroup": false,
-            "BuiltIn": true,
-            "Type": 1,
-            "Visible": true,
-            "Id": 984
-          },
-          {
-            "ControlIdName": "Office.com",
-            "BeginGroup": true,
-            "BuiltIn": true,
-            "Type": 1,
-            "Visible": true,
-            "Id": 3775
-          },
-          {
-            "ControlIdName": "Access Developer Resources",
-            "BeginGroup": false,
-            "BuiltIn": true,
-            "Type": 1,
-            "Visible": true,
-            "Id": 9714
-          },
-          {
-            "ControlIdName": "Contact Support",
-            "BeginGroup": false,
-            "BuiltIn": true,
-            "Type": 1,
-            "Visible": true,
-            "Id": 7903
-          },
-          {
-            "FaceIdName": "Sample Databases",
-            "BeginGroup": true,
-            "BuiltIn": false,
-            "Caption": "E&xemples de bases de données...",
-            "DescriptionText": "",
-            "Enabled": true,
-            "HelpContextId": 0,
-            "HelpFile": "",
-            "OLEMenuGroup": -1,
-            "OLEUsage": 1,
-            "Parameter": "",
-            "Tag": "",
-            "TooltipText": "",
-            "Type": 10,
-            "Visible": true,
-            "Controls": [
-              {
-                "BeginGroup": false,
-                "BuiltIn": false,
-                "BuiltInFace": true,
-                "Caption": "",
-                "DescriptionText": "",
-                "Enabled": true,
-                "FaceId": 6182,
-                "HelpContextId": 0,
-                "HelpFile": "",
-                "HyperlinkType": 0,
-                "OLEUsage": 1,
-                "OnAction": "",
-                "Parameter": "",
-                "ShortcutText": "",
-                "Style": 3,
-                "Tag": "",
-                "TooltipText": "",
-                "Type": 1,
-                "Visible": false
-              },
-              {
-                "BeginGroup": false,
-                "BuiltIn": false,
-                "BuiltInFace": true,
-                "Caption": "",
-                "DescriptionText": "",
-                "Enabled": true,
-                "FaceId": 6182,
-                "HelpContextId": 0,
-                "HelpFile": "",
-                "HyperlinkType": 0,
-                "OLEUsage": 1,
-                "OnAction": "",
-                "Parameter": "",
-                "ShortcutText": "",
-                "Style": 3,
-                "Tag": "",
-                "TooltipText": "",
-                "Type": 1,
-                "Visible": false
-              },
-              {
-                "BeginGroup": false,
-                "BuiltIn": false,
-                "BuiltInFace": true,
-                "Caption": "",
-                "DescriptionText": "",
-                "Enabled": true,
-                "FaceId": 6182,
-                "HelpContextId": 0,
-                "HelpFile": "",
-                "HyperlinkType": 0,
-                "OLEUsage": 1,
-                "OnAction": "",
-                "Parameter": "",
-                "ShortcutText": "",
-                "Style": 3,
-                "Tag": "",
-                "TooltipText": "",
-                "Type": 1,
-                "Visible": false
-              },
-              {
-                "BeginGroup": false,
-                "BuiltIn": false,
-                "BuiltInFace": true,
-                "Caption": "",
-                "DescriptionText": "",
-                "Enabled": true,
-                "FaceId": 6182,
-                "HelpContextId": 0,
-                "HelpFile": "",
-                "HyperlinkType": 0,
-                "OLEUsage": 1,
-                "OnAction": "",
-                "Parameter": "",
-                "ShortcutText": "",
-                "Style": 3,
-                "Tag": "",
-                "TooltipText": "",
-                "Type": 1,
-                "Visible": false
-              },
-              {
-                "BeginGroup": false,
-                "BuiltIn": false,
-                "BuiltInFace": true,
-                "Caption": "",
-                "DescriptionText": "",
-                "Enabled": true,
-                "FaceId": 6182,
-                "HelpContextId": 0,
-                "HelpFile": "",
-                "HyperlinkType": 0,
-                "OLEUsage": 1,
-                "OnAction": "",
-                "Parameter": "",
-                "ShortcutText": "",
-                "Style": 3,
-                "Tag": "",
-                "TooltipText": "",
-                "Type": 1,
-                "Visible": false
-              }
-            ]
-          },
-          {
-            "ControlIdName": "Check for Updates",
-            "BeginGroup": true,
-            "BuiltIn": true,
-            "Type": 1,
-            "Visible": true,
-            "Id": 9340
-          },
-          {
-            "ControlIdName": "Detect and Repair",
-            "BeginGroup": false,
-            "BuiltIn": true,
-            "Type": 1,
-            "Visible": true,
-            "Id": 3774
-          },
-          {
-            "ControlIdName": "Activate Product",
-            "BeginGroup": false,
-            "BuiltIn": true,
-            "Type": 1,
-            "Visible": true,
-            "Id": 5933
-          },
-          {
-            "ControlIdName": "Privacy Options",
-            "BeginGroup": false,
-            "BuiltIn": true,
-            "Type": 1,
-            "Visible": true,
-            "Id": 7714
-          },
-          {
-            "ControlIdName": "About Microsoft Access",
-            "BeginGroup": true,
-            "BuiltIn": true,
-            "Type": 1,
-            "Visible": true,
-            "Id": 927
-          }
-        ]
+        "Id": 30010
       }
     ]
   }

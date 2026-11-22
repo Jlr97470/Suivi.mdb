@@ -24,9 +24,9 @@
           <xsd:annotation>
             <xsd:appinfo>
               <od:fieldProperty name="Caption" type="12" value="Réf Employé"></od:fieldProperty>
-              <od:fieldProperty name="ColumnWidth" type="3" value="1283"></od:fieldProperty>
-              <od:fieldProperty name="ColumnOrder" type="3" value="0"></od:fieldProperty>
               <od:fieldProperty name="ColumnHidden" type="1" value="0"></od:fieldProperty>
+              <od:fieldProperty name="ColumnOrder" type="3" value="0"></od:fieldProperty>
+              <od:fieldProperty name="ColumnWidth" type="3" value="1283"></od:fieldProperty>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -34,12 +34,12 @@
           <xsd:annotation>
             <xsd:appinfo>
               <od:fieldProperty name="AllowZeroLength" type="1" value="0"></od:fieldProperty>
-              <od:fieldProperty name="Required" type="1" value="0"></od:fieldProperty>
               <od:fieldProperty name="Caption" type="12" value="Nom Employé"></od:fieldProperty>
-              <od:fieldProperty name="ColumnWidth" type="3" value="1951"></od:fieldProperty>
-              <od:fieldProperty name="ColumnOrder" type="3" value="0"></od:fieldProperty>
               <od:fieldProperty name="ColumnHidden" type="1" value="0"></od:fieldProperty>
+              <od:fieldProperty name="ColumnOrder" type="3" value="0"></od:fieldProperty>
+              <od:fieldProperty name="ColumnWidth" type="3" value="1951"></od:fieldProperty>
               <od:fieldProperty name="DisplayControl" type="3" value="109"></od:fieldProperty>
+              <od:fieldProperty name="Required" type="1" value="0"></od:fieldProperty>
               <od:fieldProperty name="UnicodeCompression" type="1" value="1"></od:fieldProperty>
             </xsd:appinfo>
           </xsd:annotation>
@@ -53,13 +53,13 @@
           <xsd:annotation>
             <xsd:appinfo>
               <od:fieldProperty name="AllowZeroLength" type="1" value="0"></od:fieldProperty>
-              <od:fieldProperty name="Required" type="1" value="0"></od:fieldProperty>
               <od:fieldProperty name="Caption" type="12" value="Téléphone bureau"></od:fieldProperty>
-              <od:fieldProperty name="InputMask" type="10" value="00\ 00\ 00\ 00\ 00;;_"></od:fieldProperty>
-              <od:fieldProperty name="ColumnWidth" type="3" value="1905"></od:fieldProperty>
-              <od:fieldProperty name="ColumnOrder" type="3" value="0"></od:fieldProperty>
               <od:fieldProperty name="ColumnHidden" type="1" value="0"></od:fieldProperty>
+              <od:fieldProperty name="ColumnOrder" type="3" value="0"></od:fieldProperty>
+              <od:fieldProperty name="ColumnWidth" type="3" value="1905"></od:fieldProperty>
               <od:fieldProperty name="DisplayControl" type="3" value="109"></od:fieldProperty>
+              <od:fieldProperty name="InputMask" type="10" value="00\ 00\ 00\ 00\ 00;;_"></od:fieldProperty>
+              <od:fieldProperty name="Required" type="1" value="0"></od:fieldProperty>
               <od:fieldProperty name="UnicodeCompression" type="1" value="1"></od:fieldProperty>
             </xsd:appinfo>
           </xsd:annotation>
@@ -72,22 +72,22 @@
         <xsd:element name="RéfDirecteur" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int">
           <xsd:annotation>
             <xsd:appinfo>
-              <od:fieldProperty name="Required" type="1" value="0"></od:fieldProperty>
-              <od:fieldProperty name="Caption" type="12" value="Réf Directeur"></od:fieldProperty>
-              <od:fieldProperty name="ColumnWidth" type="3" value="1951"></od:fieldProperty>
-              <od:fieldProperty name="ColumnOrder" type="3" value="0"></od:fieldProperty>
-              <od:fieldProperty name="ColumnHidden" type="1" value="0"></od:fieldProperty>
-              <od:fieldProperty name="DecimalPlaces" type="2" value="255"></od:fieldProperty>
-              <od:fieldProperty name="DisplayControl" type="3" value="111"></od:fieldProperty>
-              <od:fieldProperty name="RowSourceType" type="10" value="Table/Query"></od:fieldProperty>
-              <od:fieldProperty name="RowSource" type="12" value="SELECT DISTINCTROW Employés.RéfEmployé, Employés.NomEmployé FROM Employés ORDER BY Employés.NomEmployé;"></od:fieldProperty>
               <od:fieldProperty name="BoundColumn" type="3" value="1"></od:fieldProperty>
+              <od:fieldProperty name="Caption" type="12" value="Réf Directeur"></od:fieldProperty>
               <od:fieldProperty name="ColumnCount" type="3" value="2"></od:fieldProperty>
               <od:fieldProperty name="ColumnHeads" type="1" value="0"></od:fieldProperty>
+              <od:fieldProperty name="ColumnHidden" type="1" value="0"></od:fieldProperty>
+              <od:fieldProperty name="ColumnOrder" type="3" value="0"></od:fieldProperty>
+              <od:fieldProperty name="ColumnWidth" type="3" value="1951"></od:fieldProperty>
               <od:fieldProperty name="ColumnWidths" type="10" value="0;2880"></od:fieldProperty>
+              <od:fieldProperty name="DecimalPlaces" type="2" value="255"></od:fieldProperty>
+              <od:fieldProperty name="DisplayControl" type="3" value="111"></od:fieldProperty>
+              <od:fieldProperty name="LimitToList" type="1" value="1"></od:fieldProperty>
               <od:fieldProperty name="ListRows" type="3" value="8"></od:fieldProperty>
               <od:fieldProperty name="ListWidth" type="10" value="1134twip"></od:fieldProperty>
-              <od:fieldProperty name="LimitToList" type="1" value="1"></od:fieldProperty>
+              <od:fieldProperty name="Required" type="1" value="0"></od:fieldProperty>
+              <od:fieldProperty name="RowSource" type="12" value="SELECT DISTINCTROW Employés.RéfEmployé, Employés.NomEmployé FROM Employés ORDER BY Employés.NomEmployé;"></od:fieldProperty>
+              <od:fieldProperty name="RowSourceType" type="10" value="Table/Query"></od:fieldProperty>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
